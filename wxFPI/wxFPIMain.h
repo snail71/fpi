@@ -13,10 +13,12 @@
 
 
 #include "wxFPIApp.h"
-
+#include "PID.h"
 
 #include "GUIFrame.h"
 #include <wx/timer.h>
+#include "W1Temp.h"
+#include "GPIOClass.h"
 
 
 class wxFPIFrame: public GUIFrame
@@ -24,6 +26,8 @@ class wxFPIFrame: public GUIFrame
     public:
         wxFPIFrame(wxFrame *frame);
         ~wxFPIFrame();
+        //void SetupPID();
+        //void ComputePID();
     protected:
         void OnTimer(wxTimerEvent& event);
     private:
@@ -33,8 +37,27 @@ class wxFPIFrame: public GUIFrame
         virtual void fpiScrollChanged( wxScrollEvent& event );
 
         float translateScrollPosition(int scrollPos);
+        int translateValueToScrollPosition(double temp);
+        void DoControl();
         wxTimer *m_timer;
         int m_timecount;
+        double m_FermTemp;
+        double m_Deadzone;
+        W1Temp *m_tempBus;
+        double m_temp;
+        unsigned long m_idleTimeSecs;
+        int m_state;
+        GPIOClass *m_HeatPin;
+        GPIOClass *m_CoolPin;
+        //PID *m_pid;
+
+
+        //double m_pidSetpoint;
+        //double m_pidInput;
+        //double m_pidOutput;
+        //float m_Kp;
+        //float m_Ki;
+        //float m_Kd;
 };
 
 #endif // WXFPIMAIN_H

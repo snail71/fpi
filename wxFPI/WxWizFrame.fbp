@@ -134,7 +134,7 @@
                     <property name="flag">wxALL</property>
                     <property name="proportion">0</property>
                     <object class="wxGauge" expanded="1">
-                        <property name="bg"></property>
+                        <property name="bg">238,18,28</property>
                         <property name="context_help"></property>
                         <property name="enabled">1</property>
                         <property name="fg"></property>
@@ -280,7 +280,7 @@
                                 <property name="bg"></property>
                                 <property name="context_help"></property>
                                 <property name="enabled">1</property>
-                                <property name="fg"></property>
+                                <property name="fg">64,64,64</property>
                                 <property name="font">,90,92,16,70,0</property>
                                 <property name="hidden">0</property>
                                 <property name="id">wxID_ANY</property>
@@ -335,7 +335,7 @@
                                 <property name="bg"></property>
                                 <property name="context_help"></property>
                                 <property name="enabled">1</property>
-                                <property name="fg"></property>
+                                <property name="fg">64,64,64</property>
                                 <property name="font">,90,92,16,70,0</property>
                                 <property name="hidden">0</property>
                                 <property name="id">wxID_ANY</property>
@@ -390,7 +390,7 @@
                                 <property name="bg"></property>
                                 <property name="context_help"></property>
                                 <property name="enabled">1</property>
-                                <property name="fg"></property>
+                                <property name="fg">222,74,15</property>
                                 <property name="font">,90,92,22,70,0</property>
                                 <property name="hidden">0</property>
                                 <property name="id">wxID_ANY</property>
@@ -445,11 +445,11 @@
                                 <property name="bg"></property>
                                 <property name="context_help"></property>
                                 <property name="enabled">1</property>
-                                <property name="fg"></property>
+                                <property name="fg">224,74,15</property>
                                 <property name="font">,90,92,22,70,0</property>
                                 <property name="hidden">0</property>
                                 <property name="id">wxID_ANY</property>
-                                <property name="label">65.0 F</property>
+                                <property name="label">-.- F</property>
                                 <property name="maximum_size"></property>
                                 <property name="minimum_size"></property>
                                 <property name="name">m_lblCurrentTemp</property>

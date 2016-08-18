@@ -29,6 +29,8 @@ GUIFrame::GUIFrame( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	
 	m_gauge1 = new wxGauge( this, wxID_ANY, 100, wxDefaultPosition, wxSize( 303,-1 ), wxGA_HORIZONTAL );
 	m_gauge1->SetValue( 50 ); 
+	m_gauge1->SetBackgroundColour( wxColour( 238, 18, 28 ) );
+	
 	bSizer1->Add( m_gauge1, 0, wxALL, 5 );
 	
 	m_slider1 = new wxSlider( this, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxSize( 303,-1 ), wxSL_HORIZONTAL );
@@ -40,24 +42,28 @@ GUIFrame::GUIFrame( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_staticText3 = new wxStaticText( this, wxID_ANY, wxT("SETTING:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText3->Wrap( -1 );
 	m_staticText3->SetFont( wxFont( 16, 70, 90, 92, false, wxEmptyString ) );
+	m_staticText3->SetForegroundColour( wxColour( 64, 64, 64 ) );
 	
 	gSizer1->Add( m_staticText3, 0, wxALL, 5 );
 	
 	m_staticText4 = new wxStaticText( this, wxID_ANY, wxT("CURRENT:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText4->Wrap( -1 );
 	m_staticText4->SetFont( wxFont( 16, 70, 90, 92, false, wxEmptyString ) );
+	m_staticText4->SetForegroundColour( wxColour( 64, 64, 64 ) );
 	
 	gSizer1->Add( m_staticText4, 0, wxALL, 5 );
 	
 	m_lblSetting = new wxStaticText( this, wxID_ANY, wxT("64.0 F"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_lblSetting->Wrap( -1 );
 	m_lblSetting->SetFont( wxFont( 22, 70, 90, 92, false, wxEmptyString ) );
+	m_lblSetting->SetForegroundColour( wxColour( 222, 74, 15 ) );
 	
 	gSizer1->Add( m_lblSetting, 0, wxALL, 5 );
 	
-	m_lblCurrentTemp = new wxStaticText( this, wxID_ANY, wxT("65.0 F"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_lblCurrentTemp = new wxStaticText( this, wxID_ANY, wxT("-.- F"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_lblCurrentTemp->Wrap( -1 );
 	m_lblCurrentTemp->SetFont( wxFont( 22, 70, 90, 92, false, wxEmptyString ) );
+	m_lblCurrentTemp->SetForegroundColour( wxColour( 224, 74, 15 ) );
 	
 	gSizer1->Add( m_lblCurrentTemp, 0, wxALL, 5 );
 	

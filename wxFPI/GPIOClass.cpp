@@ -113,8 +113,10 @@ int GPIOClass::GetVal(wxString &valx)
         return -1;
 
     wxString dirPath(GPIO_PATH);
+    dirPath = dirPath.Append(m_gpionum);
+    dirPath = dirPath.append(wxT("/value"));
 
-    wxFile file(dirPath.Append(wxString::Format(wxT("%s/value"),m_gpionum)),wxFile::read);
+    wxFile file(dirPath,wxFile::read);
 
     if(file.IsOpened()==FALSE)
         return -1;

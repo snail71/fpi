@@ -15,6 +15,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="../wxFPI" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -26,6 +27,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="../wxFPI" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -44,6 +46,10 @@
 		<Unit filename="GPIOClass.h" />
 		<Unit filename="GUIFrame.cpp" />
 		<Unit filename="GUIFrame.h" />
+		<Unit filename="PID.cpp" />
+		<Unit filename="PID.h" />
+		<Unit filename="W1Temp.cpp" />
+		<Unit filename="W1Temp.h" />
 		<Unit filename="WxWizFrame.fbp" />
 		<Unit filename="wxFPIApp.cpp" />
 		<Unit filename="wxFPIApp.h" />

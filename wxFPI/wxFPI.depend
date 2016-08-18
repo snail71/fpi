@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1471289081 source:/home/steve/projects/fpi/wxFPI/GUIFrame.cpp
+1471536392 source:/home/steve/projects/fpi/wxFPI/GUIFrame.cpp
 	"wx/wxprec.h"
 	<wx/wx.h>
 	"GUIFrame.h"
@@ -1468,7 +1468,7 @@
 1393366635 /usr/include/wx-2.8/wx/gtk/filedlg.h
 	"wx/generic/filedlgg.h"
 
-1471295142 /home/steve/projects/fpi/wxFPI/GUIFrame.h
+1471529806 /home/steve/projects/fpi/wxFPI/GUIFrame.h
 	<wx/statusbr.h>
 	<wx/gdicmn.h>
 	<wx/font.h>
@@ -1489,17 +1489,19 @@
 1471285179 /home/steve/projects/fpi/wxFPI/wxFPIApp.h
 	<wx/app.h>
 
-1471295437 /home/steve/projects/fpi/wxFPI/wxFPIMain.h
+1471543410 /home/steve/projects/fpi/wxFPI/wxFPIMain.h
 	"wxFPIApp.h"
+	"PID.h"
 	"GUIFrame.h"
 	<wx/timer.h>
-
-1471352773 source:/home/steve/projects/fpi/wxFPI/wxFPIMain.cpp
-	"wx_pch.h"
-	"wxFPIMain.h"
+	"W1Temp.h"
 	"GPIOClass.h"
 
-1471361976 source:/home/steve/projects/fpi/wxFPI/GPIOClass.cpp
+1471546288 source:/home/steve/projects/fpi/wxFPI/wxFPIMain.cpp
+	"wx_pch.h"
+	"wxFPIMain.h"
+
+1471365154 source:/home/steve/projects/fpi/wxFPI/GPIOClass.cpp
 	"GPIOClass.h"
 	"wx/file.h"
 	"wx/textfile.h"
@@ -1508,10 +1510,13 @@
 1471360496 /home/steve/projects/fpi/wxFPI/GPIOClass.h
 	<wx/string.h>
 
-1471358574 source:/home/steve/projects/fpi/wxFPI/W1Temp.cpp
+1471371427 source:/home/steve/projects/fpi/wxFPI/W1Temp.cpp
 	"W1Temp.h"
+	"wx/dir.h"
+	"wx/file.h"
 
-1471358574 /home/steve/projects/fpi/wxFPI/W1Temp.h
+1471362633 /home/steve/projects/fpi/wxFPI/W1Temp.h
+	"wx/arrstr.h"
 
 1393366633 /usr/include/wx-2.8/wx/file.h
 	"wx/defs.h"
@@ -1537,4 +1542,15 @@
 1393366633 /usr/include/wx-2.8/wx/dir.h
 	"wx/longlong.h"
 	"wx/string.h"
+
+1471371465 source:/home/steve/projects/fpi/wxFPI/PID.cpp
+	"PID.h"
+	<inttypes.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<sys/time.h>
+	<sys/types.h>
+
+1471371391 /home/steve/projects/fpi/wxFPI/PID.h
 
